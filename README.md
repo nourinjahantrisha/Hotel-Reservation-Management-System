@@ -47,7 +47,7 @@ The Hotel Reservation Management System is a C-based software application design
 
 - Programming Language: C
 - Data Storage: File Handling in C
-- Development Environment: To be decided
+- Development Environment: VS-Code/Code-Blocks
 
 # System Users
 
