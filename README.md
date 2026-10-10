@@ -76,7 +76,7 @@ Currently in the planning and development stage.
 # Team Members
 
 - Team Leader: [NOURIN JAHAN TRISHA](https://github.com/nourinjahantrisha)
-- Team Member 2: [KHALID BHUIYAN]
+- Team Member 2: [KHALID BHUIYAN](https://github.com/khalidbhuiyan12)
 - Team Member 3: [NUSRAT JAHAN RAFI](https://github.com/Nusrat-JR)
 - Team Member 4: [MD.HUMAYUN KABIR ANIK](https://github.com/kabiranik)
 - Team Member 5: [JUBAIR SADID KARIM]
