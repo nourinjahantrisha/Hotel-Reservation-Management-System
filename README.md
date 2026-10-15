@@ -79,7 +79,7 @@ Currently in the planning and development stage.
 - Team Member 2: [KHALID BHUIYAN](https://github.com/khalidbhuiyan12)
 - Team Member 3: [NUSRAT JAHAN RAFI](https://github.com/Nusrat-JR)
 - Team Member 4: [MD.HUMAYUN KABIR ANIK](https://github.com/kabiranik)
-- Team Member 5: [JUBAIR SADID KARIM]
+- Team Member 5: [JUBAIR SADID KARIM](https://github.com/karim0174)
 
 # How to Run
 
