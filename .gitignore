@@ -1,0 +1,13 @@
+
+# Compiled C program files
+*.exe
+*.out
+*.o
+
+# Temporary files
+*.tmp
+*~
+
+# Operating system files
+Thumbs.db
+.DS_Store
