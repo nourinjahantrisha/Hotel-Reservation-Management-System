@@ -1,93 +1,180 @@
-# Hotel-Reservation-Management-System
+# Hotel Reservation Management System
 
-# Project Overview
+A C-based Hotel Reservation Management System developed as part of the Software Engineering capstone project at Daffodil International University (DIU).
 
-The Hotel Reservation Management System is a C-based software application designed to streamline hotel room reservations, occupancy tracking, and billing using file handling. The system allows administrators to manage room information and pricing, while guests can search for available rooms, make reservations, and cancel bookings.
+The project aims to simplify hotel room management, guest reservations, room availability tracking, and checkout billing using file handling in C.
 
-# Objectives
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Objectives](#objectives)
+- [Key Features](#key-features)
+- [System Workflow](#system-workflow)
+- [Billing Calculation](#billing-calculation)
+- [Technologies Used](#technologies-used)
+- [Data Storage](#data-storage)
+- [Project Status](#project-status)
+- [Getting Started](#getting-started)
+- [Testing Plan](#testing-plan)
+- [Project Team](#project-team)
+- [Course Instructor](#course-instructor)
+- [Academic Purpose](#academic-purpose)
+
+## Project Overview
+
+The Hotel Reservation Management System is designed to provide a simple way to manage hotel rooms and reservations through a menu-driven C application.
+
+Administrators can manage room details, update room rates, and monitor occupancy. Guests can search for available rooms, make reservations, and cancel bookings.
+
+The system will use C file handling to store and retrieve room information, guest details, reservation records, and billing information without requiring a database management system.
+
+## Objectives
 
 - Simplify hotel room reservation and management.
 - Track room availability and occupancy status.
-- Maintain room details and reservation records using file handling.
-- Calculate booking charges, taxes, and discounts.
+- Store and retrieve records using file handling.
+- Support booking and cancellation operations.
+- Calculate room charges, taxes, and applicable discounts.
 - Generate invoices during checkout.
+- Apply seasonal pricing when required.
 
-# Key Features
+## Key Features
 
-1. Room Management
+### 1. Room Management
 
-- Identify rooms by room type, nightly rate, and availability status.
-- Add new rooms and update existing room details.
-- Apply seasonal pricing based on different periods.
-- Monitor room occupancy and availability.
+- Maintain room numbers, room types, and nightly rates.
+- Add rooms and update existing room details.
+- Apply seasonal pricing.
+- Track available and occupied rooms.
 
-2. Reservation Management
+### 2. Reservation Management
 
 - Search for available rooms.
-- View room types and nightly rates.
-- Book available rooms.
+- Display room types and nightly rates.
+- Book available rooms and record guest information.
 - Cancel existing reservations.
 - Update room availability after booking or cancellation.
 
-3. Billing and Checkout
+### 3. Billing and Checkout
 
-- Calculate total charges based on the number of nights stayed.
-- Apply applicable taxes and discounts.
+- Calculate room charges based on the number of nights stayed.
+- Apply configured taxes and eligible discounts.
 - Calculate the final payable amount.
 - Generate an invoice containing reservation and billing details.
 
-4. File Handling
+### 4. File Handling
 
-- Store room information in files.
-- Save guest and reservation records.
-- Maintain booking and cancellation information.
-- Retrieve and update stored data when required.
+- Save and retrieve room information.
+- Store guest and reservation records.
+- Update records when bookings are created or cancelled.
+- Maintain billing records where required.
 
-# Technologies Used
+## System Workflow
 
-- Programming Language: C
-- Data Storage: File Handling in C
-- Development Environment: VS-Code/Code-Blocks
+1. The user opens the application.
+2. The user selects an available operation from the menu.
+3. The system retrieves the required records from files.
+4. The guest searches for a room or manages an existing reservation.
+5. The system validates the requested operation and updates the relevant records.
+6. At checkout, the system calculates the bill and generates an invoice.
+7. The updated records are saved for future use.
 
-# System Users
+## Billing Calculation
 
-# Administrator
+The billing module calculates the amount payable at checkout.
 
-- Manage room details and nightly rates.
-- Apply seasonal pricing.
-- Monitor room occupancy.
-- Maintain room and reservation records.
+**Basic formula:**
 
-# Guest
+- Room Charge = Nightly Rate × Number of Nights
+- Subtotal = Room Charge + Other Applicable Charges
+- Tax Amount = Taxable Subtotal × Tax Rate
+- Discount Amount = Eligible Amount × Discount Rate
+- Final Amount = Subtotal + Tax Amount − Discount Amount
 
-- Search for available rooms.
-- Make room reservations.
-- Cancel reservations.
-- View booking charges and invoices.
+The actual tax rate, discount rules, and any additional charges will follow the project's agreed requirements.
 
-# Expected Outcome
+## Technologies Used
 
-The system will provide a simple and efficient way to manage hotel room reservations, room availability, occupancy tracking, and billing. It will use C programming and file handling to store and manage data without requiring a database management system.
+- **Programming Language:** C
+- **Data Storage:** File handling in C
+- **Development Environments:** Visual Studio Code and/or Code::Blocks
+- **Version Control:** Git
+- **Code Hosting and Collaboration:** GitHub
 
-# Project Status
+## Data Storage
 
-Currently in the planning and development stage.
+The system will use files to persist application data.
 
-# Team Members
+Depending on the final implementation, separate files may be used for:
 
-- Team Leader: [NOURIN JAHAN TRISHA](https://github.com/nourinjahantrisha)
-- Team Member 2: [KHALID BHUIYAN](https://github.com/khalidbhuiyan12)
-- Team Member 3: [NUSRAT JAHAN RAFI](https://github.com/Nusrat-JR)
-- Team Member 4: [MD.HUMAYUN KABIR ANIK](https://github.com/kabiranik)
-- Team Member 5: [JUBAIR SADID KARIM](https://github.com/karim0174)
+- Room records
+- Guest information
+- Reservation records
+- Billing and invoice records
 
-# How to Run
+The final file formats and names will be documented after implementation.
 
-1. Clone or download this repository.
-2. Open the project in a C-compatible IDE or compiler.
-3. Compile the C source files.
-4. Run the compiled program.
+## Project Status
 
-Detailed compilation and execution instructions will be added as development progresses.
+**Current Status:** Planning and development.
 
-# This project is developed for academic purposes as part of a Software Engineering capstone project.
+The features described above represent the intended system functionality. Their implementation and testing progress will be updated as development continues.
+
+## Getting Started
+
+### Prerequisites
+
+- A C compiler, such as GCC.
+- Visual Studio Code with a suitable C development setup, or Code::Blocks.
+- Git, if cloning the repository.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/nourinjahantrisha/Hotel-Reservation-Management-System.git
+   ```
+
+2. Open the downloaded project folder in your preferred C development environment.
+3. Compile the C source files using the instructions provided with the implemented source code.
+4. Run the compiled application.
+
+**Note:** Build and execution instructions will be updated as the project implementation progresses.
+
+## Testing Plan
+
+The system will be tested against scenarios such as:
+
+- Searching for an available room.
+- Attempting to book an unavailable room.
+- Booking and cancelling a reservation.
+- Checking whether room availability is updated correctly.
+- Calculating bills for different stay durations.
+- Applying valid taxes and discounts.
+- Saving and retrieving records from files.
+- Generating an invoice with correct billing details.
+
+Testing results will be documented as these features are implemented.
+
+## Project Team
+
+| Role | Name | GitHub |
+|---|---|---|
+| Team Leader | Nourin Jahan Trisha | [GitHub Profile](https://github.com/nourinjahantrisha) |
+| Team Member | Khalid Bhuiyan | [GitHub Profile](https://github.com/khalidbhuiyan12) |
+| Team Member | Nusrat Jahan Rafi | [GitHub Profile](https://github.com/Nusrat-JR) |
+| Team Member | Md. Humayun Kabir Anik | [GitHub Profile](https://github.com/kabiranik) |
+| Team Member | Jubair Sadid Karim | [GitHub Profile](https://github.com/karim0174) |
+
+## Course Instructor
+
+**Instructor:** [Mehedi H. Faysal](https://github.com/MahdiBuilds)  
+**Department:** Software Engineering  
+**Institution:** Daffodil International University
+
+## Academic Purpose
+
+This project is developed for academic purposes as part of the Software Engineering capstone project at Daffodil International University.
+
+The project is intended to apply C programming, file handling, problem-solving, software design, testing, and collaborative development practices to a practical reservation management scenario.
